@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card">
+        <div class="car-header">
+            <h3>Jefe</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover"> 
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Telefono</th>
+                        <th>E-mail</th>
+                        <th>Nombre</th>
+                        <th>Direccion</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let jefe of jefes">
+                        <td>{{jefe.id_jefe}}</td>
+                        <td>{{jefe.num_telefono}}</td>
+                        <td>{{jefe.e_mail}}</td>
+                        <td>{{nombre_jefe}}</td>
+                        <td>{{jefe.direccion}}</td>
+                        <td>
+                            <button (click)="Editar(jefe)" class="btn btn-outline-info" style="margin-left: 15px;">Editar</button>
+                            <button class="btn btn-outline-danger" style="margin-left: 15px;">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

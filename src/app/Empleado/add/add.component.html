@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h3>Nuevo Empleado</h3>
+      </div>
+      <div class="card-body">
+        <form>
+
+          <div class="form-group">
+            <label for="">Nombre:</label>
+            <input type="text" class="form-control" [(ngModel)]="empleado.Nombre" name="Nombre">
+          </div>
+
+          <div class="form-group">
+            <label for="">Telefono</label>
+            <input type="text" class="form-control" [(ngModel)]="empleado.Telefono" name="Telefono">
+          </div>
+
+          <div class="form-group">
+            <label for="">Domicilio</label>
+            <input type="text" class="form-control" [(ngModel)]="empleado.Domicilio" name="Domicilio">
+          </div>
+
+          <div class="form-group">
+            <label for="">Correo:</label>
+            <input type="text" class="form-control" [(ngModel)]="empleado.Correo" name="Correo">
+          </div>
+
+          <div class="form-group">
+            <button (click)="Guar()" class="btn btn-danger">Guardar</button>
+          </div>
+        </form>
+      </div>
+        
+  </div>

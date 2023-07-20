@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h3>Nuevo Jefe</h3>
+      </div>
+      <div class="card-body">
+        <form>
+
+          <div class="form-group">
+            <label for="">Telefono</label>
+            <input type="text" class="form-control" [(ngModel)]="jefe.num_telefono" name="num_telefono">
+          </div>
+
+          <div class="form-group">
+            <label for="">E-MAIL</label>
+            <input type="text" class="form-control" [(ngModel)]="jefe.e_mail" name="e-mail">
+          </div>
+
+          <div class="form-group">
+            <label for="">Nombre</label>
+            <input type="text" class="form-control" [(ngModel)]="jefe.nombre_jefe" name="nombre_jefe">
+          </div>
+
+          <div class="form-group">
+            <label for="">Direccion</label>
+            <input type="text" class="form-control" [(ngModel)]="jefe.direccion" name="direccion">
+          </div>
+
+          <div class="form-group">
+            <button (click)="Guardar()" class="btn btn-danger">Guardar</button>
+          </div>
+        </form>
+      </div>
+        
+  </div>
+
+
